@@ -1,0 +1,108 @@
+CLI- command line interface
+GUI- graphic user interface
+
+ls -a
+ls-l
+ls -la (all files plus hidden plus desc)
+
+find .
+find . -type d
+>> find folders
+
+
+rmdir foldername
+->> remove folder
+rmdir .foldername
+>> delete hidden folder
+
+touch file.txt
+>> create a file
+
+rm file.txt
+>>remove or delete a file
+
+mv test.txt newname.txt
+>> rename a file
+
+mv newname.txt "new folder destination"
+
+cat index.html
+>> contents of a file
+
+head index.html
+>> returns only first contents of a file about 10 lines
+
+head -3 index.html
+>> shows 3 lines of the file
+>> specify number
+
+tail index.html
+>>returns the last 10 lines of a file
+
+
+////////////////////////////////////////////////////////////
+- Make directory/folder
+mkdir [directory_name]
+
+- Make a hidden directory/folder
+mkdir .[directory_name]
+
+- Remove directory/folder
+rmdir [directory_name]
+
+- Delete a hidden directory/folder
+rmdir .[directory_name]
+
+- Print Working Directory
+pwd
+
+- List all files and folder
+ls
+
+- List all files and folder including hidden files/folders
+ls -a
+
+- List all files and folder including information
+ls -l
+
+- List all files and folder including information and  hidden files/folders
+ls -la
+
+- Show all contents of a folder
+find .
+
+- Show all files of a folder
+find . -type f
+
+- Show all directory of a folder
+find . -type d
+
+- Change Directory
+cd
+
+- Go back one directory
+cd ..
+
+- Create a file
+touch [filename.extension]
+
+- Delete a file
+rm [filename.extension]
+
+- Move a file
+mv [filename.extension] [destination_path]
+
+- Rename a file
+mv [filename.extension] [renamed_filename.extension]
+
+- Show the content of a file
+cat [filename.extension]
+
+- Display the first lines
+head [filename.extension]
+
+- Display the last lines
+tail [filename.extension]
+
+- Custon number of lines
+head -n [number_of_lines] [filename.extension]

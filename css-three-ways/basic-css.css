@@ -1,0 +1,20 @@
+h2{
+    letter-spacing: 10px;
+    font-style: italic;
+    text-decoration: dashed underline;
+    /* color: rgb(220, 100, 100, 0.5); */
+    /* background-color: rgb(0,255 ,0,0.4); */
+    color: #006D7790;
+}
+
+/* Hexadecimal */
+  /* #RRGGBB */
+  /* #RRGGBBAA */
+  /* 0 - 9, A - F */
+ 
+/* em means the font size of parent 3em of 20px parent is 60px */
+/* rem means the size of the root element = default: 16px */
+
+h3 {
+  font-size: 4rem;
+}
