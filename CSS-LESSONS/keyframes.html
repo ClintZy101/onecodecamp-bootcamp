@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       
+        div {
+            width: 100px;
+            height: 100px;
+            background: yellow;
+            animation-name: example;
+            animation-duration: 5s;
+            cursor: pointer;
+            position:relative;
+            /* animation-delay: 2s; */
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+        /* div:hover{
+           
+        } */
+        /* @keyframes example {
+            from {background-color: yellow;}
+            to {background-color: red;}
+        } */
+        /* @keyframes example1 {
+            0% {background-color: yellow;}
+            25%{background-color: red;}
+            50%{background-color: blue;}
+            100%{background-color: purple;}
+        } */
+        @keyframes example {
+            0% {background-color: yellow; left: 0px; top: 0px;}
+            25% {background-color: red; left: 200px; top: 0px;}
+            50% {background-color: orange; left: 200px; top: 200px;}
+            75% {background-color: blue; left: 0px; top: 200px;}
+            100% {background-color: green; left: 0; top: 0px;}
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>
