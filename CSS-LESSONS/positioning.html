@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #ancestor {
+        border: 2px solid black;
+        padding: 20px;
+        margin: 20px;
+        background-color: #f6f7eb;
+        position: relative;
+      }
+      /* Static Positioning - elements follow normal document flow */
+      /* relative to the element's original position */
+      #relative {
+        background-color: #393e41;
+        color: white;
+        position: relative;
+        top: -30px;
+        left: 20px
+      }
+/* relative to the parent container that is not static (must be relative) */
+      #absolute{
+        background-color: #e94f37;
+        position:absolute;
+        /* top:0px; */
+        right:20px
+      }
+      /* relative to the view port */
+      #fixed{
+        background-color: aqua;
+        position: fixed;
+        top:0px;
+      }
+
+      /* sticks to a certain position in the view port once reached */
+      #sticky{
+        position: sticky;
+        background: #faf0ca;
+        top:0px;
+      }
+      #margin-auto{
+        margin-left:auto;
+        margin-right: auto;
+        background-color: #e94f37;
+        max-width: max-content;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="ancestor">
+      <div id="margin-auto">This is the first line</div>
+      <div>This is the first line</div>
+      <div id="relative">Relative Positioning</div>
+      <div id="absolute">Absolute Positioning</div>
+      <div id="fixed">Fixed Positioning</div>
+
+    </div>
+    <div id="sticky">Sticky positioning</div>
+    <div style="height: 2000px">
+      Scroll down to see the sticky element in action
+    </div>
+  </body>
+</html>
