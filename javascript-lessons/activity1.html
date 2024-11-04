@@ -1,16 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    <img id="traffic-light" src="traffic-stop.png" alt="" width="200px" height="200px">
-   
+  </head>
+  <body>
+    <img
+      id="traffic-light"
+      src="traffic-stop.png"
+      alt=""
+      width="200px"
+      height="200px"
+    />
+    <p id="demo">Press a: for GO</p>
+    <p >Press s: for Ready</p>
+    <p >Press d: for Stop</p>
+    <!-- <button id="button1" class="button" onclick="setTrafficLight()">Go</button>
+    <button id="button2" class="button" onclick="setTrafficLight()">
+      Ready
+    </button>
+    <button id="button3" class="button" onclick="setTrafficLight()">
+      Stop
+    </button> -->
 
-    <button onclick="document.getElementById('traffic-light').src='traffic-go.png'">Go</button>
-    <button onclick="document.getElementById('traffic-light').src='traffic-ready.png'">Ready</button>
-    <button onclick="document.getElementById('traffic-light').src='traffic-stop.png'">Stop</button>
-</body>
+    <!-- 
+        <div>
+            <button onclick="document.getElementById('traffic-light').src='traffic-go.png'">Go</button>
+            <button onclick="document.getElementById('traffic-light').src='traffic-ready.png'">Ready</button>
+            <button onclick="document.getElementById('traffic-light').src='traffic-stop.png'">Stop</button>
+        </div> -->
+
+    <script>
+      //   const element1 = document.getElementById("button1").innerHTML;
+      //   const element2 = document.getElementById("button2").innerHTML;
+      //   const element3 = document.getElementById("button3").innerHTML;
+
+      //   const elementClass = document.getElementsByClassName("button");
+
+      //   console.log(element3);
+
+      // const setTrafficLight = () => {
+      //     if( element=== "Go"){
+      //         document.getElementById('traffic-light').src='traffic-go.png'
+      //     } else if(element === "Ready"){
+      //         document.getElementById('traffic-light').src='traffic-ready.png'
+      //     } else if(element === "Stop") {
+      //         document.getElementById('traffic-light').src='traffic-stop.png'
+      //     }
+      //     return
+      // }
+      //   const setTrafficLight = () => {
+      //     switch (element) {
+      //       case "Go":
+      //         document.getElementById("traffic-light").src = "traffic-go.png";
+      //         break;
+      //       case "Ready":
+      //         document.getElementById("traffic-light").src = "traffic-ready.png";
+      //         break;
+      //       case "Stop":
+      //         document.getElementById("traffic-light").src = "traffic-stop.png";
+      //       default:
+      //         document.getElementById("traffic-light").src = "traffic-go.png";
+      //     }
+      //   };
+
+
+
+      document.addEventListener("keydown", (e) => {
+        const key = e.key; // Get the key that was pressed
+        console.log("Key pressed:", key); // Log the key for debugging
+
+        switch (key) {
+          case "a":
+            console.log("Switching to traffic-go.png");
+            document.getElementById("traffic-light").src = "traffic-go.png";
+            break;
+          case "s":
+            console.log("Switching to traffic-ready.png");
+            document.getElementById("traffic-light").src = "traffic-ready.png";
+            break;
+          case "d":
+            console.log("Switching to traffic-stop.png");
+            document.getElementById("traffic-light").src = "traffic-stop.png";
+            break;
+          default:
+            console.log("Default case: traffic-stop.png");
+            document.getElementById("traffic-light").src = "traffic-stop.png";
+        }
+      });
+    </script>
+  </body>
 </html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      document.addEventListener("keydown", function (event) {
+        let result = handleKeyPress(event.key);
+        if (result !== null) {
+          console.log(`Key "${event.key}" pressed, returning: ${result}`);
+        }
+      });
+
+      function handleKeyPress(key) {
+        switch (key) {
+          case "a":
+            return "You pressed A!";
+          case "b":
+            return "You pressed B!";
+          case "Enter":
+            return "You pressed Enter!";
+          case "Escape":
+            return "You pressed Escape!";
+          // Add more cases for other keys as needed
+          default:
+            return null; // Return null if the key doesn't match any case
+        }
+      }
+    </script>
+  </body>
+</html>

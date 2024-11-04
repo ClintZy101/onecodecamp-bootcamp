@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p id="demo1">hello</p>
+    <p id="name">hello</p>
+
+    <script>
+      // const car =["audi", "toyota", "bmw"]
+      // car[0] = "rolls royce"
+      // car.push("daewoo")
+      // // console.log(z)
+      // document.getElementById("demo1").innerHTML =car
+
+      const car = { type: "toyota", model: "2021", color: "red mica" };
+      car.color = "white";
+      const person ={
+        firstName: "john",
+        lastName: "doe",
+        fullName: function(){
+            return this.firstName + " " + this.lastName
+        }
+          }
+      // add property
+      car.owner = "Clint";
+      document.getElementById(
+        "demo1"
+      ).innerHTML = `${car.color} +" " + ${car.type}`;
+
+
+
+      document.getElementById("name").innerHTML = person.fullName();
+      console.log(person);
+    </script>
+  </body>
+</html>

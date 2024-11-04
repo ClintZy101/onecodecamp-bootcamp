@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="plus"></p>
+    <p id="minus-plus"></p>
+    <p id="plus-multi"></p>
+    <p id="multi-div"></p>
+    <p id="plus-div"></p>
+    <script>
+        const a = 8
+        const b = 5
+        const c = 4
+
+        const d = {
+            result1 : a+ b+c,
+            result2 : a - c + b,
+            result3 : a +b * c,
+            result4: (a*b)/c,
+            result5: b + a/c
+        }
+
+        document.getElementById('plus').innerHTML = d.result1
+        document.getElementById('minus-plus').innerHTML = d.result2
+        document.getElementById('plus-multi').innerHTML = d.result3
+        document.getElementById('multi-div').innerHTML = d.result4
+        document.getElementById('plus-div').innerHTML = d.result5
+        
+        // document.getElementById('plus').innerHTML = a+ b+c
+        // document.getElementById('minus-plus').innerHTML = a - c + b
+        // document.getElementById('plus-multi').innerHTML = a +b * c
+        // document.getElementById('multi-div').innerHTML = (a*b)/c
+        // document.getElementById('plus-div').innerHTML = b + a/c
+
+       
+
+
+
+    </script>
+</body>
+</html>
