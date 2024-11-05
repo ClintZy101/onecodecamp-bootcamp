@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+        <p id="res1"></p>
+        <p id="res2"></p>
+        <p id="res3"></p>
+        <p id="res4"></p>
+        <p id="res5"></p>
+        <p id="res6"></p>
+        <p id="res7"></p>
+        <p id="res8"></p>
+        <p id="res9"></p>
+        <p id="res10"></p>
+
+    <script>
+      const x =10
+       let result1 = x == 10
+      let  result2 = x === "10"
+      let  result3 = x === 10
+      let  result4 = x != 10
+      let  result5 = x < 10
+      let  result6 = x > 10
+      let  result7 = x <= 10
+      let result8 = x>=10 && x!= 5
+      let result9 = x != 5 || x < 5
+      let result10 = !(x>(5+x))
+
+      const result = [
+        {res: x == 10},
+        {res: x === "10"},
+        {res:x === 10},
+        {res: x != 10},
+        {res: x < 10},
+        {res: x > 10},
+        {res: x <= 10},
+        {res: x>=10 && x!= 5},
+        {res: x != 5 || x < 5},
+        {res: !(x>(5+x))},
+
+      ]
+
+      
+    
+
+      document.getElementById("res1").innerHTML = `1. ${result1}`
+      document.getElementById("res2").innerHTML = `2. ${result2}`
+      document.getElementById("res3").innerHTML = `3. ${result3}`
+      document.getElementById("res4").innerHTML = `4. ${result4}`
+      document.getElementById("res5").innerHTML = `5. ${result5}`
+      document.getElementById("res6").innerHTML = `6. ${result6}`
+      document.getElementById("res7").innerHTML = `7. ${result7}`
+      document.getElementById("res8").innerHTML = `8. ${result8}`
+      document.getElementById("res9").innerHTML = `9. ${result9}`
+      document.getElementById("res10").innerHTML = `10. ${result10}`
+    </script>
+  </body>
+</html>
