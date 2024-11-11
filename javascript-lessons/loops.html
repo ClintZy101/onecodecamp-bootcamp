@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo">Text</p>
+    <script>
+         /* 
+      different kinds of loops
+      for - loops through a block of code a number of times
+      for/in - loops through the properties of an object
+      for/of - loops the values of iterable objects
+      while - loops through a block of code while a specified condition is true
+      do/while - loops through a block of code while a specified condition is true
+      */
+        let text = ""
+        // for(i = 0; i<5; i++){
+        //     text + "The number is " + i +'<br/>';
+        // }
+
+        const numbers=[1,2,3,4,5]
+        const word= "Javascript"
+
+        // for(let x in numbers){
+        //     text += numbers[x] + "<br/>"
+        // }
+        
+        for (let x of word){
+            text += x + "<br/>"
+        }
+
+        document.getElementById("demo").innerHTML = text
+    </script>
+</body>
+</html>
